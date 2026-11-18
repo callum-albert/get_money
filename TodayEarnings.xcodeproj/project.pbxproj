@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		211E81BAA1468418B3DD7D17 /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A77E579C6610F0DCF0A4BA /* MonthView.swift */; };
+		2F3E289D12D3492F748168A6 /* EarningsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 041FDB5C8AF6ABECD608AB00 /* EarningsCore */; };
+		3FC792E64A4C5B512429CD85 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1E1B85D9DD0CE0468C956D /* TodayView.swift */; };
+		8DA0FAD0D4D4B86C6B3A6981 /* EarningsCore in Frameworks */ = {isa = PBXBuildFile; productRef = E0690B1D347212D76726158F /* EarningsCore */; };
+		CD09398B4CF83CA3B0B7C741 /* EarningsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A0D70795A218F90F2B3D60B7 /* EarningsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D40C485648B8DC2BCFE185FD /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEE112C93F2117B53203B4 /* SharedStore.swift */; };
+		D70A13ABA3BAB968C394AB7B /* TodayEarningsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC629FFDA9ACAD1D862555F /* TodayEarningsApp.swift */; };
+		E2EEFD4CEE61BB5109248549 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F4FE068A1E66556C6679CB /* SettingsView.swift */; };
+		E536084139AB6EE0A2BD8F3D /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA14CC9CA414E691338444A /* ViewState.swift */; };
+		F08B33F015196A9A00538362 /* EarningsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2290AC7166351BFE7EA78D6 /* EarningsWidget.swift */; };
+		FF8B53BE9DB88943B719C611 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEE112C93F2117B53203B4 /* SharedStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA52C05A08368F3861D4E259 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE9083C0A2D939D397A9FC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F9D4D00F1A8D4AF1D3BECD0;
+			remoteInfo = EarningsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		225D159411F262996A220BD8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD09398B4CF83CA3B0B7C741 /* EarningsWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0E3C8E380E7C43F8A1ECAF22 /* TodayEarnings.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TodayEarnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78F4FE068A1E66556C6679CB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8CC629FFDA9ACAD1D862555F /* TodayEarningsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayEarningsApp.swift; sourceTree = "<group>"; };
+		A0D70795A218F90F2B3D60B7 /* EarningsWidgetExtension.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = EarningsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DEE112C93F2117B53203B4 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		A2290AC7166351BFE7EA78D6 /* EarningsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsWidget.swift; sourceTree = "<group>"; };
+		AA1E1B85D9DD0CE0468C956D /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		AFA14CC9CA414E691338444A /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		B2A77E579C6610F0DCF0A4BA /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		E29EACF905AFF2BD61234CB0 /* get_money */ = {isa = PBXFileReference; lastKnownFileType = folder; name = get_money; path = .; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BC4DE9E9AC85659E68ACA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA0FAD0D4D4B86C6B3A6981 /* EarningsCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717EFA7EA3D8CBC2C42B662B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F3E289D12D3492F748168A6 /* EarningsCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1172CC59A4008E8DF78D8019 = {
+			isa = PBXGroup;
+			children = (
+				3445DA1EF6889E95F5965EFD /* App */,
+				3463AD034F1705CCBC3E88F8 /* Packages */,
+				BA5546656B0F42043A382394 /* Widget */,
+				AC1F07D7E846C9D057ACD0EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3445DA1EF6889E95F5965EFD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B2A77E579C6610F0DCF0A4BA /* MonthView.swift */,
+				78F4FE068A1E66556C6679CB /* SettingsView.swift */,
+				A0DEE112C93F2117B53203B4 /* SharedStore.swift */,
+				8CC629FFDA9ACAD1D862555F /* TodayEarningsApp.swift */,
+				AA1E1B85D9DD0CE0468C956D /* TodayView.swift */,
+				AFA14CC9CA414E691338444A /* ViewState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3463AD034F1705CCBC3E88F8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E29EACF905AFF2BD61234CB0 /* get_money */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		AC1F07D7E846C9D057ACD0EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0D70795A218F90F2B3D60B7 /* EarningsWidgetExtension.appex */,
+				0E3C8E380E7C43F8A1ECAF22 /* TodayEarnings.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA5546656B0F42043A382394 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				A2290AC7166351BFE7EA78D6 /* EarningsWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F9D4D00F1A8D4AF1D3BECD0 /* EarningsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08975BE1753C4B3292A00A62 /* Build configuration list for PBXNativeTarget "EarningsWidgetExtension" */;
+			buildPhases = (
+				53F0612F81C5AF7C5F5AC94F /* Sources */,
+				717EFA7EA3D8CBC2C42B662B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EarningsWidgetExtension;
+			packageProductDependencies = (
+				041FDB5C8AF6ABECD608AB00 /* EarningsCore */,
+			);
+			productName = EarningsWidgetExtension;
+			productReference = A0D70795A218F90F2B3D60B7 /* EarningsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8FC647C3AA060D4D8074DE1C /* TodayEarnings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DAA1BC53194FDAA1660BDFA /* Build configuration list for PBXNativeTarget "TodayEarnings" */;
+			buildPhases = (
+				835809BC97BA679769A7B5D0 /* Sources */,
+				3BC4DE9E9AC85659E68ACA8F /* Frameworks */,
+				225D159411F262996A220BD8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				330D491921624A07DCB54C23 /* PBXTargetDependency */,
+			);
+			name = TodayEarnings;
+			packageProductDependencies = (
+				E0690B1D347212D76726158F /* EarningsCore */,
+			);
+			productName = TodayEarnings;
+			productReference = 0E3C8E380E7C43F8A1ECAF22 /* TodayEarnings.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEE9083C0A2D939D397A9FC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					6F9D4D00F1A8D4AF1D3BECD0 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					8FC647C3AA060D4D8074DE1C = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 569C6DE07059FE6E3D7DBCCA /* Build configuration list for PBXProject "TodayEarnings" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 1172CC59A4008E8DF78D8019;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6B6FE1C49F894E553CE0C94B /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AC1F07D7E846C9D057ACD0EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FC647C3AA060D4D8074DE1C /* TodayEarnings */,
+				6F9D4D00F1A8D4AF1D3BECD0 /* EarningsWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53F0612F81C5AF7C5F5AC94F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F08B33F015196A9A00538362 /* EarningsWidget.swift in Sources */,
+				FF8B53BE9DB88943B719C611 /* SharedStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835809BC97BA679769A7B5D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211E81BAA1468418B3DD7D17 /* MonthView.swift in Sources */,
+				E2EEFD4CEE61BB5109248549 /* SettingsView.swift in Sources */,
+				D40C485648B8DC2BCFE185FD /* SharedStore.swift in Sources */,
+				D70A13ABA3BAB968C394AB7B /* TodayEarningsApp.swift in Sources */,
+				3FC792E64A4C5B512429CD85 /* TodayView.swift in Sources */,
+				E536084139AB6EE0A2BD8F3D /* ViewState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		330D491921624A07DCB54C23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F9D4D00F1A8D4AF1D3BECD0 /* EarningsWidgetExtension */;
+			targetProxy = AA52C05A08368F3861D4E259 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		30D9E415DB3503BB8C97DE6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/App.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Configuration/App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "今日进账";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.callum.TodayEarnings;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41E3AC8B574B2DD895072F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Configuration/App.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Configuration/App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "今日进账";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.callum.TodayEarnings;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AC27E8F66CE3ABC67B5A988 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/App.entitlements;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Configuration/Widget-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.callum.TodayEarnings.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EAAD5E0DCBC80B6A1A5FD65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		85E85E91B0880D7A1EAF82E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Configuration/App.entitlements;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Configuration/Widget-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.callum.TodayEarnings.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A59B4DCB56346703D850BD6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08975BE1753C4B3292A00A62 /* Build configuration list for PBXNativeTarget "EarningsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E85E91B0880D7A1EAF82E9 /* Debug */,
+				4AC27E8F66CE3ABC67B5A988 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		569C6DE07059FE6E3D7DBCCA /* Build configuration list for PBXProject "TodayEarnings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAAD5E0DCBC80B6A1A5FD65 /* Debug */,
+				A59B4DCB56346703D850BD6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9DAA1BC53194FDAA1660BDFA /* Build configuration list for PBXNativeTarget "TodayEarnings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E3AC8B574B2DD895072F56 /* Debug */,
+				30D9E415DB3503BB8C97DE6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6B6FE1C49F894E553CE0C94B /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		041FDB5C8AF6ABECD608AB00 /* EarningsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EarningsCore;
+		};
+		E0690B1D347212D76726158F /* EarningsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = EarningsCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AEE9083C0A2D939D397A9FC0 /* Project object */;
+}
